@@ -1,4 +1,4 @@
-# YINI Demo Apps
+# YINI Config Demo Apps
 Example projects showing how to use [YINI](https://github.com/YINI-lang/YINI-spec) configuration files.
 
 YINI is a minimal, human-readable config format – like INI, but with type-safe values, nested sections, comments, and optional strict mode.
@@ -21,3 +21,8 @@ Feel free to browse, copy, or adapt the code if you find it useful.
   [/ts-esm/basic](./ts-esm/basic/)
 
 ---
+
+**^YINI ≡**  
+> A simple, structured, and human-friendly configuration format.  
+
+[yini-lang.org](https://yini-lang.org) · [YINI on GitHub](https://github.com/YINI-lang)  
