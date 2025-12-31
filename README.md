@@ -1,7 +1,7 @@
 # YINI Config Demo Apps
 Example projects showing how to use [YINI](https://github.com/YINI-lang/YINI-spec) configuration files.
 
-YINI is a minimal, human-readable config format – like INI, but with type-safe values, nested sections, comments, and optional strict mode.
+YINI is a human-readable text format for representing structured information. It is designed to be clear, predictable, and easy for humans to read and write. It is suitable for configuration files, application settings, and general data-storage use cases.
 
 The demos are intended to illustrate how to load and work with a YINI config file in different environments. The examples are kept basic and pretty straightforward to follow.
 
