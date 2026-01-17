@@ -1,7 +1,7 @@
 {
-    "name": "yini-demo-app-ts-esm-basic",
+    "name": "yini-demo-app-ts-esm-medium",
     "version": "1.0.0",
-    "description": "Demo app for YINI config file with a simple web server config file using ES Modules (import) in TypeScript.",
+    "description": "Demo app for YINI config file using ES Modules (import) in TypeScript.",
     "main": "dist/index.js",
     "type": "module",
     "scripts": {
