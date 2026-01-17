@@ -1,32 +1,103 @@
 /*
-    This script loads and parses a config.yini
-    file then prints its contents using CommonJS.
+    Medium YINI Demo - CommonJS
+
+    Demonstrates three ways to parse a YINI file:
+    - Variant A: Default parsing
+    - Variant B: Strict mode
+    - Variant C: Options object + metadata
+
+    This example shows how to:
+    - Load and parse settings.yini
+    - Read nested values
+    - Work with arrays and inline objects
+    - Access sections with spaces in their names
+    - Inspect both the JS object and JSON output
 */
 
-const path = require('path');
-const YINI = require('yini-parser');
+const path = require("path")
+const YINI = require("yini-parser")
 
-// Path to your config file.
-const file = path.join(__dirname, 'config.yini');
+const CONFIG_FILE = "settings.yini"
+const file = path.join(__dirname, CONFIG_FILE)
 
 try {
-    // Parse the YINI config file.
-    const config = YINI.parseFile(file);
+    console.log("*** Variant A: Default parsing ***\n")
 
-    // If you want to parse the file in strict mode, use this line instead:
-    // const config = YINI.parseFile(file, true);
+    const config = YINI.parseFile(file)
 
-    // Print some value in the config.
-    console.log('App Name  = '+config.App.name)
-    console.log('isCaching = '+config.App.Special.isCaching)
+    console.log("=== Application Settings ===")
+    console.log("Service ID   :", config.Settings.serviceId)
+    console.log("Release      :", config.Settings.release)
+    console.log("Debug Mode   :", config.Settings.debugMode)
+    console.log("Tagline      :", config.Settings.tagline)
     console.log()
 
-    // Print the result.
-    console.log('Parsed config:');
-    console.log(config)
+    console.log("=== Network ===")
+    console.log("Bind Address :", config.Settings.Network.bindAddress)
+    console.log("Bind Port    :", config.Settings.Network.bindPort)
+    console.log(
+        "Allowed Origins:",
+        config.Settings.Network.allowedOrigins.join(", ")
+    )
+    console.log()
 
-    console.log('Parsed config as JSON:');
-    console.log(JSON.stringify(config, null, 2));
-} catch (error) {
-    console.error('Error parsing config.yini:', error.message);
+    console.log("=== Capabilities ===")
+    console.log("Search enabled:", config.Settings.Capabilities.enableSearch)
+    console.log(
+        "Experimental features:",
+        config.Settings.Capabilities.experimental
+    )
+    console.log()
+
+    console.log("=== Pools (inline object) ===")
+    console.log("Min units :", config.Settings.Capabilities.pools.min_units)
+    console.log("Max units :", config.Settings.Capabilities.pools.max_units)
+    console.log("Size MB   :", config.Settings.Capabilities.pools.size_mb)
+    console.log("Timeout   :", config.Settings.Capabilities.pools.timeout_sec)
+    console.log()
+
+    console.log("=== Database ===")
+    console.log("DB Host :", config.Settings["DB Config"].host)
+    console.log("SSL     :", config.Settings["DB Config"].ssl)
+    console.log("User    :", config.Settings["DB Config"].Security.username)
+    console.log()
+
+    console.log("--- Parsed Object ---")
+    console.dir(config, { depth: 5 })
+
+    console.log("\n--- As JSON ---")
+    console.log(JSON.stringify(config, null, 2))
+} catch (err) {
+    console.error("Error parsing " + CONFIG_FILE + ":", err.message)
+}
+
+try {
+    console.log("*** Variant B: Strict mode ***\n")
+
+    const strictConfig = YINI.parseFile(file, true)
+
+    console.log("Strict mode loaded OK")
+    console.log()
+    console.log("Service ID:", strictConfig.Settings.serviceId)
+    console.log("Bind Port :", strictConfig.Settings.Network.bindPort)
+    console.log()
+} catch (err) {
+    console.error("Error parsing " + CONFIG_FILE + ":", err.message)
+}
+
+try {
+    console.log("*** Variant C: Options object + metadata ***\n")
+
+    const result = YINI.parseFile(file, {
+        strictMode: false,
+        includeMetadata: true,
+        failLevel: "warnings-and-errors"
+    })
+
+    console.log("Note: When includeMetadata = true, parseFile returns { result, meta }\n")
+
+    console.log("Parsed result:", result.result)
+    console.log("Parser metadata:", result.meta)
+} catch (err) {
+    console.error("Error parsing " + CONFIG_FILE + ":", err.message)
 }
