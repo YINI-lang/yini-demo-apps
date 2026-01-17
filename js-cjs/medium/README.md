@@ -17,7 +17,7 @@ This example shows how to:
 The example includes a sample [settings.yini](./settings.yini) file and a small JavaScript script that reads and prints its contents [out.txt](./out.txt).
 
 ## Usage
-This example is located in `/js-cjs/basic/index.js`.
+This example is located in `/js-cjs/medium/index.js`.
 
 ### Installation
 Run in your terminal:
