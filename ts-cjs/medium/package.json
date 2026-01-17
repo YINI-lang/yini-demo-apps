@@ -19,7 +19,7 @@
         "demo",
         "typescript",
         "javascript",
-        "esm",
+        "cjs",
         "parse",
         "configuration"
     ],
