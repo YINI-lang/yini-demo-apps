@@ -1,0 +1,160 @@
+
+> yini-demo-app-ts-cjs-medium@1.0.0 start
+> node dist/index.js
+
+*** Variant A: Default parsing ***
+
+=== Application Settings ===
+Service ID   : NebulaService
+Release      : 3.2.1
+Debug Mode   : false
+Tagline      : "Nebula" is a cloud of gas and dust in outer space.
+
+=== Network ===
+Bind Address : 127.0.0.1
+Bind Port    : 8080
+Allowed Origins: https://myapp.com, http://localhost:3000
+
+=== Capabilities ===
+Search enabled: true
+Experimental features: [ 'new-ui', 'streaming-api' ]
+
+=== Pools (inline object) ===
+Min units : 2
+Max units : 5
+Size MB   : 128
+Timeout   : 90
+
+=== Database ===
+DB Host : db.internal
+SSL     : true
+User    : service_user
+
+--- Parsed Object ---
+{
+  Settings: {
+    serviceId: 'NebulaService',
+    release: '3.2.1',
+    debugMode: false,
+    tagline: '"Nebula" is a cloud of gas and dust in outer space.',
+    Network: {
+      bindAddress: '127.0.0.1',
+      bindPort: 8080,
+      allowedOrigins: [ 'https://myapp.com', 'http://localhost:3000' ]
+    },
+    Capabilities: {
+      enableSearch: true,
+      experimental: [ 'new-ui', 'streaming-api' ],
+      pools: { min_units: 2, max_units: 5, size_mb: 128, timeout_sec: 90 }
+    },
+    'DB Config': {
+      host: 'db.internal',
+      ssl: true,
+      Security: { username: 'service_user', password: '****' }
+    }
+  }
+}
+
+--- As JSON ---
+{
+  "Settings": {
+    "serviceId": "NebulaService",
+    "release": "3.2.1",
+    "debugMode": false,
+    "tagline": "\"Nebula\" is a cloud of gas and dust in outer space.",
+    "Network": {
+      "bindAddress": "127.0.0.1",
+      "bindPort": 8080,
+      "allowedOrigins": [
+        "https://myapp.com",
+        "http://localhost:3000"
+      ]
+    },
+    "Capabilities": {
+      "enableSearch": true,
+      "experimental": [
+        "new-ui",
+        "streaming-api"
+      ],
+      "pools": {
+        "min_units": 2,
+        "max_units": 5,
+        "size_mb": 128,
+        "timeout_sec": 90
+      }
+    },
+    "DB Config": {
+      "host": "db.internal",
+      "ssl": true,
+      "Security": {
+        "username": "service_user",
+        "password": "****"
+      }
+    }
+  }
+}
+*** Variant B: Strict mode ***
+
+
+Warning: Strict initialMode is not yet fully implemented.
+Some validation rules may still be missing or incomplete.
+
+Strict mode loaded OK
+
+Service ID: NebulaService
+Bind Port : 8080
+
+*** Variant C: Options object + metadata ***
+
+Note: When includeMetadata = true, parseFile returns { result, meta }
+
+Parsed result: {
+  Settings: {
+    serviceId: 'NebulaService',
+    release: '3.2.1',
+    debugMode: false,
+    tagline: '"Nebula" is a cloud of gas and dust in outer space.',
+    Network: {
+      bindAddress: '127.0.0.1',
+      bindPort: 8080,
+      allowedOrigins: [Array]
+    },
+    Capabilities: { enableSearch: true, experimental: [Array], pools: [Object] },
+    'DB Config': { host: 'db.internal', ssl: true, Security: [Object] }
+  }
+}
+Parser metadata: {
+  parserVersion: '1.3.2-beta',
+  mode: 'lenient',
+  totalErrors: 0,
+  totalWarnings: 0,
+  totalMessages: 0,
+  runStartedAt: '2026-01-17T23:11:47.286Z',
+  runFinishedAt: '2026-01-17T23:11:47.308Z',
+  durationMs: 21.302,
+  preservesOrder: true,
+  orderGuarantee: 'implementation-defined',
+  source: {
+    sourceType: 'file',
+    fileName: 'settings.yini',
+    hasDocumentTerminator: false,
+    hasYiniMarker: false,
+    lineCount: 37,
+    byteSize: 1095,
+    sha256: 'df2d37ed6a5e648c267a45e45230d0b3930c9ffb907e01ac0cbbdc25fc8ac670'
+  },
+  structure: {
+    maxDepth: 3,
+    sectionCount: 5,
+    memberCount: 14,
+    keysParsedCount: null,
+    sectionNamePaths: [
+      'Settings',
+      'Settings.Network',
+      'Settings.Capabilities',
+      'Settings.DB Config',
+      'Settings.DB Config.Security'
+    ]
+  },
+  metaSchemaVersion: '1.1.1'
+}
