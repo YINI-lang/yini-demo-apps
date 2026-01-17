@@ -1,9 +1,9 @@
 {
-    "name": "yini-demo-app-js-cjs-medium",
+    "name": "yini-demo-app-js-esm-medium",
     "version": "1.0.0",
-    "description": "Demo app for YINI config file using CommonJS (require) in JavaScript.",
+    "description": "Demo app for YINI config file using ES Modules (import/export) in JavaScript.",
     "main": "index.js",
-    "type": "commonjs",
+    "type": "module",
     "scripts": {
         "start": "node index.js"
     },

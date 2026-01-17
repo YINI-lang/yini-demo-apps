@@ -1,5 +1,5 @@
 /*
-    JavaScript Medium YINI Demo - CommonJS
+    Medium YINI Demo - ESM
 
     Demonstrates three ways to parse a YINI file:
     - Variant A: Default parsing
@@ -14,8 +14,13 @@
     - Inspect both the JS object and JSON output
 */
 
-const path = require("path")
-const YINI = require("yini-parser")
+import path from "path"
+import { fileURLToPath } from "url"
+import YINI from "yini-parser"
+
+// Recreate __dirname in ESM
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const CONFIG_FILE = "settings.yini"
 const file = path.join(__dirname, CONFIG_FILE)
