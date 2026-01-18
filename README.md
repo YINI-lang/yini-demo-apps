@@ -1,45 +1,81 @@
-# YINI Config Demo Apps
-Example projects showing how to use [YINI](https://github.com/YINI-lang/YINI-spec) configuration files using the [YINI-parser reader](https://github.com/YINI-lang/yini-parser-typescript).
+# YINI Demo Apps
 
-YINI is a human-readable text format for representing structured information. It is designed to be clear, predictable, and easy for humans to read and write. It is suitable for configuration files, application settings, and general data-storage use cases.
+This repository contains **example projects showing how to use YINI configuration files** with the official [yini-parser](https://github.com/YINI-lang/yini-parser-typescript).
 
-The demos are intended to illustrate how to load and work with a YINI config file in different environments. The examples are kept basic and pretty straightforward to follow.
+The demos illustrate how to:
+- Load and parse `.yini` files.  
+- Access nested data.  
+- Work with lists and inline objects.  
+- Handle sections with spaces in their names.  
+- Use both simple and advanced parsing options.  
 
-## Basic Level Demos
+These examples are intentionally kept **clear, minimal, and practical** so they are easy to read, learn from, and adapt.
+
 Feel free to browse, copy, or adapt the code if you find it useful.
 
+---
+
+## What is YINI?
+
+YINI is a human-readable text format for representing structured information. It is designed to be **clear, predictable, and easy for humans to read and write**, while still being precise for machines to process.
+
+It is suitable for:
+- Configuration files.  
+- Application settings.  
+- Structured data files.  
+- Developer-friendly alternatives to JSON, XML, YAML, or TOML.  
+
+- Learn more: https://yini-lang.org  
+- Specification: https://github.com/YINI-lang/YINI-spec
+
+---
+
+## Basic demos
+
+These examples show the **simplest possible way** to load and read a YINI file.
+
 ### JavaScript
-- **JavaScript - CommonJS example** (using `require`):  
+- **JavaScript (CommonJS)** (using `require`):  
   [/js-cjs/basic](./js-cjs/basic/)
-- **JavaScript - ES Module example** (using `import`):  
+- **JavaScript (ESM)** (using `import`):  
   [/js-esm/basic](./js-esm/basic/)
 
 ### TypeScript
-- **TypeScript - CommonJS example** (using `import`):  
+- **TypeScript (CommonJS)** (using `import`):  
   [/ts-cjs/basic](./ts-cjs/basic/)
-- **TypeScript - ES Module example** (using `import`):  
+- **TypeScript (ESM)** (using `import`):  
   [/ts-esm/basic](./ts-esm/basic/)
 
 ---
 
-## Medium Level Demos
-Feel free to browse, copy, or adapt the code if you find it useful.
+## Medium demos
+
+These examples demonstrate:
+- Nested sections.  
+- Inline objects.  
+- Arrays.  
+- Sections with spaces in their names.  
+- Three parsing variants:
+  - Default parsing.  
+  - Strict mode.  
+  - Options object + metadata.
 
 ### JavaScript
-- **JavaScript - CommonJS example** (using `require`):  
+- **JavaScript (CommonJS)** (using `require`):  
   [/js-cjs/medium](./js-cjs/medium/)
-- **JavaScript - ES Module example** (using `import`):  
+- **JavaScript (ESM)** (using `import`):  
   [/js-esm/medium](./js-esm/medium/)
 
 ### TypeScript
-- **TypeScript - CommonJS example** (using `import`):  
+- **TypeScript (CommonJS)** (using `import`):  
   [/ts-cjs/medium](./ts-cjs/medium/)
-- **TypeScript - ES Module example** (using `import`):  
+- **TypeScript (ESM)** (using `import`):  
   [/ts-esm/medium](./ts-esm/medium/)
 
 ---
 
-**^YINI ≡**  
-> A simple, structured, and human-friendly configuration format.  
+**^YINI ≡ A simple, structured, and human-friendly configuration format.**
 
-[YINI Homepage](https://yini-lang.org) · [YINI on GitHub](https://github.com/YINI-lang)  
+- 🌐 Homepage: https://yini-lang.org  
+- 🧠 Spec: https://github.com/YINI-lang/YINI-spec  
+- 🧰 Parser: https://github.com/YINI-lang/yini-parser-typescript  
