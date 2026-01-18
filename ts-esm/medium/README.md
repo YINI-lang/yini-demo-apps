@@ -17,7 +17,6 @@ This example shows how to:
 The example includes a sample `settings.yini` file and a small TypeScript script that reads and prints its contents.
 
 ## Usage
-This example is located in `/ts-esm/medium/index.ts`.
 
 ### Installation
 Run in your terminal:
