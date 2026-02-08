@@ -25,7 +25,7 @@ It is suitable for:
 - Structured data files.  
 - Developer-friendly alternatives to JSON, XML, YAML, or TOML.  
 
-- Learn more: https://yini-lang.org  
+- Learn more: [https://yini-lang.org](https://yini-lang.org/?utm_source=github&utm_medium=referral&utm_campaign=yini_demos&utm_content=readme)  
 - Specification: https://github.com/YINI-lang/YINI-spec
 
 ---
@@ -76,6 +76,6 @@ These examples demonstrate:
 
 **^YINI ≡ A simple, structured, and human-friendly configuration format.**
 
-- 🌐 Homepage: https://yini-lang.org  
+- 🌐 Homepage: [https://yini-lang.org](https://yini-lang.org/?utm_source=github&utm_medium=referral&utm_campaign=yini_demos&utm_content=readme_footer)  
 - 🧠 Spec: https://github.com/YINI-lang/YINI-spec  
 - 🧰 Parser: https://github.com/YINI-lang/yini-parser-typescript  

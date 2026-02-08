@@ -23,4 +23,4 @@ npm start        # runs the compiled JS
 ```
 
 ---
-[YINI Homepage](https://yini-lang.org)  
+[YINI Homepage](https://yini-lang.org/?utm_source=github&utm_medium=referral&utm_campaign=yini_demos&utm_content=sub_readme_footer)  
