@@ -1,0 +1,38 @@
+// Medium-sized YINI configuration example.
+
+^ App
+name = "Lumen Portal"
+environment = "development"
+debug = true
+
+    ^^ Runtime
+    logLevel = "info"
+    timezone = "Europe/Stockholm"
+    workers = 4
+
+    ^^ Server
+    host = "0.0.0.0"
+    port = 5173
+    publicUrl = "http://localhost:5173"
+
+    ^^ Database
+    type = "postgres"
+    host = "localhost"
+    port = 5432
+    database = "lumen_portal"
+    pool = {
+        min: 2,
+        max: 20
+    }
+
+    ^^ Features
+    enabled = [
+        "new-navigation",
+        "audit-log",
+        "bulk-export"
+    ]
+
+    ^^ Email
+    provider = "smtp"
+    fromAddress = "noreply@example.com"
+    retryCount = 3

@@ -1,13 +1,10 @@
 # YINI Demo Apps
 
-This repository contains **example projects showing how to use YINI configuration files** with the official [yini-parser](https://github.com/YINI-lang/yini-parser-typescript).
+This repository contains **example projects showing how to use YINI configuration files** with the official YINI parsers for Python and TypeScript/JavaScript.
 
-The demos illustrate how to:
-- Load and parse `.yini` files.  
-- Access nested data.  
-- Work with lists and inline objects.  
-- Handle sections with spaces in their names.  
-- Use both simple and advanced parsing options.  
+Official parsers used by these demos:
+- [yini-parser-python](https://github.com/YINI-lang/yini-parser-python)
+- [yini-parser-typescript](https://github.com/YINI-lang/yini-parser-typescript)
 
 These examples are intentionally kept **clear, minimal, and practical** so they are easy to read, learn from, and adapt.
 
@@ -34,6 +31,10 @@ It is suitable for:
 
 These examples show the **simplest possible way** to load and read a YINI file.
 
+### Python
+- **Python 3**:  
+  [/python/basic](./python/basic/)
+
 ### JavaScript
 - **JavaScript (CommonJS)** (using `require`):  
   [/js-cjs/basic](./js-cjs/basic/)
@@ -51,14 +52,16 @@ These examples show the **simplest possible way** to load and read a YINI file.
 ## Medium demos
 
 These examples demonstrate:
-- Nested sections.  
-- Inline objects.  
-- Arrays.  
-- Sections with spaces in their names.  
-- Three parsing variants:
-  - Default parsing.  
-  - Strict mode.  
-  - Options object + metadata.
+- Nested sections.
+- Inline objects.
+- Arrays.
+- Sections with spaces in their names.
+
+Some JavaScript and TypeScript examples may also demonstrate additional parser options such as strict mode, metadata, or options objects.
+
+### Python
+- **Python 3**:  
+  [/python/medium](./python/medium/)
 
 ### JavaScript
 - **JavaScript (CommonJS)** (using `require`):  
@@ -78,4 +81,6 @@ These examples demonstrate:
 
 - 🌐 Homepage: [https://yini-lang.org](https://yini-lang.org/?utm_source=github&utm_medium=referral&utm_campaign=yini_demos&utm_content=readme_footer)  
 - 🧠 Spec: https://github.com/YINI-lang/YINI-spec  
-- 🧰 Parser: https://github.com/YINI-lang/yini-parser-typescript  
+- 🧰 TypeScript Parser: https://github.com/YINI-lang/yini-parser-typescript  
+- 🧰 Python Parser: https://github.com/YINI-lang/yini-parser-python  
+
