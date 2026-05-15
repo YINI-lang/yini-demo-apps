@@ -1,0 +1,12 @@
+// Basic YINI configuration example.
+
+^ App
+name = "Demo App"
+version = 1.2
+debug = false
+features = ["search", "logs", "export"]
+
+^^ Server
+host = "localhost"
+port = 8080
+useTLS = off
