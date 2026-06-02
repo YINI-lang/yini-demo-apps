@@ -5,14 +5,14 @@ This directory contains a simple demo showing how to use a [YINI config](https:/
 - Basic example for reading and working with a YINI config file.
 - Easy to follow, no advanced setup required.
 
-The example includes a sample `config.yini` file and a small TypeScript script that reads and prints its contents.
+The example includes [config.yini](./config.yini) and a small TypeScript script that reads and prints its contents.
 
 ## Usage
-This example is located in `/ts-esm/basic/index.ts`.
+This example is located in [index.ts](./index.ts).
 
 ### Installation
 Run in your terminal:
-```bash 
+```bash
 npm install
 ```
 

@@ -5,17 +5,17 @@ This directory contains a medium-sized demo showing how to use a [YINI config](h
 - Medium example for reading and working with a more structured YINI config file.
 - Demonstrates nested sections, lists, inline objects, booleans, numbers, and strings.
 
-The example includes a sample `settings.yini` file and a small Python script that reads and prints selected values from it.
+The example includes [settings.yini](./settings.yini) and a small Python script that reads and prints selected values from it.
 
 ## Usage
 
-This example is located in `/python/medium/main.py`.
+This example is located in [main.py](./main.py).
 
 ### Installation
 
 Run in your terminal:
 
-```bash 
+```bash
 python -m pip install -r requirements.txt
 ```
 
