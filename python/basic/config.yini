@@ -10,3 +10,4 @@ features = ["search", "logs", "export"]
     host = "localhost"
     port = 8080
     useTLS = off
+/END

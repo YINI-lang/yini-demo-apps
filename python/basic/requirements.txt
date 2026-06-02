@@ -1,1 +1,1 @@
-yini-parser>=0.1.0a1
+yini-parser==0.1.0a3

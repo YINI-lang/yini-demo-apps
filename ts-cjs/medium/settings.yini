@@ -34,3 +34,4 @@ ssl  = true
 ^^^ Security                       # Sub-section of `DB Config`
 username = "service_user"
 password = "****"
+/END
