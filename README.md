@@ -1,4 +1,4 @@
-# YINI Demo Apps
+# YINI Config Demo Apps
 
 This repository contains **example projects showing how to use YINI configuration files** with the official YINI parsers for Python and TypeScript/JavaScript.
 
