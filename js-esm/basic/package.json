@@ -8,8 +8,16 @@
         "start": "node index.js"
     },
     "dependencies": {
-        "yini-parser": "^1.6.1"
+        "yini-parser": "^1.6.2"
     },
-    "keywords": ["yini", "demo", "config", "javascript", "esm", "parse", "configuration"],
+    "keywords": [
+        "yini",
+        "demo",
+        "config",
+        "javascript",
+        "esm",
+        "parse",
+        "configuration"
+    ],
     "license": "MIT"
 }

@@ -2,9 +2,9 @@
 
 This repository contains **example projects showing how to use YINI configuration files** with the official YINI parsers for Python and TypeScript/JavaScript.
 
-Official parsers used by these demos:
-- [yini-parser-python](https://github.com/YINI-lang/yini-parser-python)
-- [yini-parser-typescript](https://github.com/YINI-lang/yini-parser-typescript)
+Official parser versions used by these demos:
+- [yini-parser](https://pypi.org/project/yini-parser/1.0.0b1/) for Python: `1.0.0b1`
+- [yini-parser](https://www.npmjs.com/package/yini-parser/v/1.6.2) for JavaScript and TypeScript: `1.6.2`
 
 These examples are intentionally kept **clear, minimal, and practical** so they are easy to read, learn from, and adapt.
 

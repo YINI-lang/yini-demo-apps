@@ -120,7 +120,7 @@ Parsed result: {
   }
 }
 Parser metadata: {
-  parserVersion: '1.6.0',
+  parserVersion: '1.6.2',
   mode: 'lenient',
   totalErrors: 0,
   totalWarnings: 0,
