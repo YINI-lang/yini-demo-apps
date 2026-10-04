@@ -9,11 +9,11 @@ The example includes [settings.yini](./settings.yini) and a small Python script 
 
 ## Usage
 
+Run all commands below from this demo directory.
+
 This example is located in [main.py](./main.py).
 
 ### Installation
-
-Run in your terminal:
 
 ```bash
 python -m pip install -r requirements.txt

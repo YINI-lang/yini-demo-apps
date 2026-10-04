@@ -8,10 +8,15 @@ This directory contains a simple demo showing how to use a [YINI config](https:/
 The example includes [config.yini](./config.yini) and a small TypeScript script that reads and prints its contents.
 
 ## Usage
+Run all commands below from this demo directory.
+
+### Prerequisite
+
+Node.js 20 or later is required.
+
 This example is located in [index.ts](./index.ts).
 
 ### Installation
-Run in your terminal:
 ```bash
 npm install
 ```

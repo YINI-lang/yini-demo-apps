@@ -17,9 +17,13 @@ This example shows how to:
 The example includes [settings.yini](./settings.yini), [index.ts](./index.ts), and captured sample output in [out.txt](./out.txt).
 
 ## Usage
+Run all commands below from this demo directory.
+
+### Prerequisite
+
+Node.js 20 or later is required.
 
 ### Installation
-Run in your terminal:
 ```bash
 npm install
 ```
