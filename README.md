@@ -62,7 +62,11 @@ These examples demonstrate:
 - Arrays.
 - Sections with spaces in their names.
 
-Some JavaScript and TypeScript examples may also demonstrate additional parser options such as strict mode, metadata, or options objects.
+The Go example also demonstrates default lenient parsing and strict mode. Some JavaScript and TypeScript examples demonstrate additional parser options such as metadata or options objects.
+
+### Go
+- **Go 1.22+**:
+  [/go/medium](./go/medium/)
 
 ### Python
 - **Python 3**:
