@@ -11,9 +11,9 @@ See also: [Shared AI agent instructions for the YINI project family](../AGENTS.m
 ## Project Overview
 
 - **Name:** YINI Demo Apps
-- **Purpose:** Small example projects that show how to read YINI configuration files with the official Python and JavaScript/TypeScript parsers.
-- **Languages/runtimes:** Python 3, JavaScript on Node.js, TypeScript 5.9.x on Node.js.
-- **Package managers:** npm for JavaScript/TypeScript demos; pip with `requirements.txt` for Python demos.
+- **Purpose:** Small example projects that show how to read YINI configuration files with the official Go, Python, and JavaScript/TypeScript parsers.
+- **Languages/runtimes:** Go 1.22+, Python 3, JavaScript on Node.js, TypeScript 5.9.x on Node.js.
+- **Package managers:** Go modules for the Go demo; npm for JavaScript/TypeScript demos; pip with `requirements.txt` for Python demos.
 - **Framework/stack:** No application framework. These are minimal console demos.
 - **Repository type:** Multi-demo repository. There is no root package.json, no root build, and no shared test runner.
 
@@ -21,6 +21,8 @@ See also: [Shared AI agent instructions for the YINI project family](../AGENTS.m
 
 ```text
 .
+|-- go/
+|   `-- basic/      # Go basic demo
 |-- js-cjs/
 |   |-- basic/      # JavaScript CommonJS basic demo
 |   `-- medium/     # JavaScript CommonJS medium demo
@@ -48,6 +50,7 @@ For the exact contents, purpose, setup, and usage of a demo, read that demo dire
 
 - `basic` demos use `config.yini` and show the simplest parse/read flow.
 - `medium` demos use `settings.yini` and show nested sections, arrays, inline objects, sections with spaces, and parser options where supported.
+- Go demos use `main.go` and Go modules.
 - JavaScript demos use `index.js`.
 - TypeScript demos use `index.ts`, `tsconfig.json`, and compile to `dist/`.
 - Python demos use `main.py`.
@@ -57,7 +60,7 @@ For the exact contents, purpose, setup, and usage of a demo, read that demo dire
 
 Run commands from the demo directory you are working in, and use that demo directory's `README.md` as the source of truth for installation, build, and run instructions.
 
-Do not assume commands from one demo apply to another demo. The JavaScript, TypeScript, Python, CommonJS, ESM, `basic`, and `medium` examples may have different instructions.
+Do not assume commands from one demo apply to another demo. The Go, JavaScript, TypeScript, Python, CommonJS, ESM, `basic`, and `medium` examples may have different instructions.
 
 ## Required Checks
 
@@ -99,6 +102,7 @@ When editing `.yini` files or code that reads them:
 
 ## Dependencies
 
+- The Go demo uses `github.com/YINI-lang/yini-parser-go` through Go modules.
 - JavaScript and TypeScript demos use `yini-parser` from npm.
 - TypeScript demos also use `typescript`.
 - Python demos use `yini-parser` from `requirements.txt`.
