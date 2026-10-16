@@ -1,0 +1,62 @@
+Application Settings
+--------------------
+Service ID: NebulaService
+Release: 3.2.1
+Debug mode: false
+
+Network
+-------
+Bind address: 127.0.0.1
+Bind port: 8080
+Allowed origins:
+- https://myapp.com
+- http://localhost:3000
+
+Capabilities
+------------
+Search enabled: true
+Pool units: 2 to 5
+
+Database
+--------
+Host: db.internal
+SSL: true
+Username: service_user
+
+Parsed settings as JSON:
+{
+  "Settings": {
+    "Capabilities": {
+      "enableSearch": true,
+      "experimental": [
+        "new-ui",
+        "streaming-api"
+      ],
+      "pools": {
+        "max_units": 5,
+        "min_units": 2,
+        "size_mb": 128
+      }
+    },
+    "DB Config": {
+      "Security": {
+        "username": "service_user"
+      },
+      "host": "db.internal",
+      "ssl": true
+    },
+    "Network": {
+      "allowedOrigins": [
+        "https://myapp.com",
+        "http://localhost:3000"
+      ],
+      "bindAddress": "127.0.0.1",
+      "bindPort": 8080
+    },
+    "debugMode": false,
+    "release": "3.2.1",
+    "serviceId": "NebulaService"
+  }
+}
+
+Strict mode: loaded successfully
