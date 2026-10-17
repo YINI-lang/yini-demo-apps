@@ -13,6 +13,14 @@ Feel free to browse, copy, or adapt the code if you find it useful.
 
 ---
 
+## Getting started
+
+Choose a demo below, then follow the installation and run instructions in that demo's `README.md`. Run its commands from the demo directory. The Go demos require Go 1.22+, the JavaScript and TypeScript demos require Node.js 20+, and the Python demos require Python 3.
+
+If you use VS Code, install the [YINI Syntax Highlighting extension](https://marketplace.visualstudio.com/items?itemName=yini-lang.yini-syntax-highlighting) to highlight `.yini` files.
+
+---
+
 ## What is YINI?
 
 YINI is a human-readable text format for representing structured information. It is designed to be **clear, predictable, and easy for humans to read and write**, while still being precise for machines to process.
