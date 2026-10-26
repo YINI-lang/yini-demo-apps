@@ -9,7 +9,7 @@ The example includes [settings.yini](./settings.yini) and a small Python script 
 
 ## Usage
 
-Run all commands below from this demo directory.
+Run all commands below from this demo directory. Python 3.10 or newer is required.
 
 This example is located in [main.py](./main.py).
 
