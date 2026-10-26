@@ -3,9 +3,9 @@
 This repository contains **example projects showing how to use YINI configuration files** with the official YINI parsers for Go, Python, and TypeScript/JavaScript.
 
 Official parser versions used by these demos:
-- [yini-parser](https://pypi.org/project/yini-parser/1.0.0b1/) for Python: `1.0.0b1`
-- [yini-parser](https://www.npmjs.com/package/yini-parser/v/1.6.2) for JavaScript and TypeScript: `1.6.2`
-- [yini-parser-go](https://github.com/YINI-lang/yini-parser-go) for Go: `v1.0.0-alpha.2` (resolved from `@latest`)
+- [yini-parser](https://pypi.org/project/yini-parser/1.0.0rc1/) for Python: `1.0.0rc1`
+- [yini-parser](https://www.npmjs.com/package/yini-parser/v/1.7.0) for JavaScript and TypeScript: `1.7.0`
+- [yini-parser-go](https://github.com/YINI-lang/yini-parser-go) for Go: `v1.0.0-alpha.3`
 
 These examples are intentionally kept **clear, minimal, and practical** so they are easy to read, learn from, and adapt.
 
@@ -15,7 +15,7 @@ Feel free to browse, copy, or adapt the code if you find it useful.
 
 ## Getting started
 
-Choose a demo below, then follow the installation and run instructions in that demo's `README.md`. Run its commands from the demo directory. The Go demos require Go 1.22+, the JavaScript and TypeScript demos require Node.js 20+, and the Python demos require Python 3.
+Choose a demo below, then follow the installation and run instructions in that demo's `README.md`. Run its commands from the demo directory. The Go demos require Go 1.22+, the JavaScript and TypeScript demos require Node.js 20+, and the Python demos require Python 3.10+.
 
 If you use VS Code, install the [YINI Syntax Highlighting extension](https://marketplace.visualstudio.com/items?itemName=yini-lang.yini-syntax-highlighting) to highlight `.yini` files.
 
@@ -45,7 +45,7 @@ These examples show the **simplest possible way** to load and read a YINI file.
   [/go/basic](./go/basic/)
 
 ### Python
-- **Python 3**:
+- **Python 3.10+**:
   [/python/basic](./python/basic/)
 
 ### JavaScript
@@ -77,7 +77,7 @@ The Go example also demonstrates default lenient parsing and strict mode. Some J
   [/go/medium](./go/medium/)
 
 ### Python
-- **Python 3**:
+- **Python 3.10+**:
   [/python/medium](./python/medium/)
 
 ### JavaScript
