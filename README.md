@@ -96,7 +96,7 @@ The Go example also demonstrates default lenient parsing and strict mode. Some J
 
 **^YINI = A simple, structured, and human-friendly configuration format.**
 
-- Homepage: [https://yini-lang.org](https://yini-lang.org/?utm_source=github&utm_medium=referral&utm_campaign=yini_demos&utm_content=readme_footer)
+- Homepage: [https://yini-lang.org](https://yini-lang.org/?utm_source=github&utm_campaign=yini_demos&utm_medium=referral&utm_content=readme_footer)
 - Spec: https://github.com/YINI-lang/YINI-spec
 - Go Parser: https://github.com/YINI-lang/yini-parser-go
 - TypeScript Parser: https://github.com/YINI-lang/yini-parser-typescript
