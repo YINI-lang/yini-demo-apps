@@ -17,6 +17,8 @@ Node.js 20 or later is required.
 This example is located in [index.js](./index.js).
 
 ### Installation
+The demo depends on `yini-parser` `^2.0.0`; `package-lock.json` records the exact installed version.
+
 ```bash
 npm install
 ```

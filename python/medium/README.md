@@ -15,6 +15,8 @@ This example is located in [main.py](./main.py).
 
 ### Installation
 
+The parser is pinned to `yini-parser==1.0.0rc2` in `requirements.txt`.
+
 ```bash
 python -m pip install -r requirements.txt
 ```

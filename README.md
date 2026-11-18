@@ -3,9 +3,9 @@
 This repository contains **example projects showing how to use YINI configuration files** with the official YINI parsers for Go, Python, and TypeScript/JavaScript.
 
 Official parser versions used by these demos:
-- [yini-parser](https://pypi.org/project/yini-parser/1.0.0rc1/) for Python: `1.0.0rc1`
-- [yini-parser](https://www.npmjs.com/package/yini-parser/v/1.7.0) for JavaScript and TypeScript: `1.7.0`
-- [yini-parser-go](https://github.com/YINI-lang/yini-parser-go) for Go: `v1.0.0-alpha.3`
+- [yini-parser](https://pypi.org/project/yini-parser/1.0.0rc2/) for Python: `1.0.0rc2`
+- [yini-parser](https://www.npmjs.com/package/yini-parser/v/2.0.0) for JavaScript and TypeScript: `2.0.0`
+- [yini-parser-go](https://github.com/YINI-lang/yini-parser-go) for Go: `v1.0.0-beta.1`
 
 These examples are intentionally kept **clear, minimal, and practical** so they are easy to read, learn from, and adapt.
 
