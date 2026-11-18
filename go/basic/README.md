@@ -16,7 +16,7 @@ Run all commands below from this demo directory. Go 1.22 or newer is required.
 go mod download
 ```
 
-The module dependency was added with `go get github.com/YINI-lang/yini-parser-go@latest`. Its resolved version is recorded in `go.mod` and `go.sum`.
+The demo uses `github.com/YINI-lang/yini-parser-go` version `v1.0.0-beta.1`, pinned in `go.mod` and `go.sum`. To select this version explicitly, run `go get github.com/YINI-lang/yini-parser-go@v1.0.0-beta.1`.
 
 ### Run the Example
 
