@@ -120,7 +120,7 @@ Parsed result: {
   }
 }
 Parser metadata: {
-  parserVersion: '1.7.0',
+  parserVersion: '2.0.0',
   mode: 'lenient',
   totalErrors: 0,
   totalWarnings: 0,
@@ -136,8 +136,8 @@ Parser metadata: {
     hasDocumentTerminator: true,
     hasYiniMarker: false,
     lineCount: 38,
-    byteSize: 1098,
-    sha256: '57a1576ce77a396d87e1c16472d87b6be8456e3c3d1409b8a3de0f76ff4fc451'
+    byteSize: 1064,
+    sha256: '93ca9b1608be2a3113ed1c045100b1e51540deb486bc8cd81e886f2856d4539f'
   },
   structure: {
     maxDepth: 3,
